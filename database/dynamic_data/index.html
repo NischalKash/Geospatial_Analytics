@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Webslesson Tutorial | JSON - Dynamic Dependent Dropdown List using Jquery and Ajax</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+  <div class="container" style="width:600px;">
+   <h2 align="center">JSON - Dynamic Dependent Dropdown List using Jquery and Ajax</h2><br /><br />
+   <select name="commodity" id="commodity" class="form-control input-lg">
+    <option value="">Select commodity</option>
+   </select>
+   <br />
+   <select name="state" id="state" class="form-control input-lg">
+    <option value="">Select state</option>
+   </select>
+   <br />
+   <select name="city" id="city" class="form-control input-lg">
+    <option value="">Select city</option>
+   </select>
+  </div>
+ </body>
+</html>
+
+<script>
+$(document).ready(function(){
+ var commodity_id;
+ load_json_data('commodity');
+ function load_json_data(id, parent_id,commodity_id)
+ {
+  var html_code = '';
+  $.getJSON('data.json', function(data){
+
+   html_code += '<option value="">Select '+id+'</option>';
+   $.each(data, function(key, value){
+    if(id == 'commodity')
+    {
+     if(value.parent_id == 'select_commodity')
+     {
+      html_code += '<option value="'+value.id+'">'+value.id+'</option>';
+     }
+    }
+    else if (id=='state')
+    {
+     if(value.parent_id == parent_id)
+     {
+      html_code += '<option value="'+value.id+'">'+value.id+'</option>';
+     }
+    }
+    else
+    {
+     if(value.parent_id == parent_id && value.parent_commodity_id==commodity_id)
+     {
+      html_code += '<option value="'+value.id+'">'+value.id+'</option>';
+     }
+    }
+   });
+   $('#'+id).html(html_code);
+  });
+
+ }
+
+ $(document).on('change', '#commodity', function(){
+  commodity_id = $(this).val();
+  if(commodity_id != '')
+  {
+   load_json_data('state', commodity_id);
+  }
+  else
+  {
+   $('#state').html('<option value="">Select state</option>');
+   $('#city').html('<option value="">Select city</option>');
+  }
+ });
+ $(document).on('change', '#state', function(){
+  var state_id = $(this).val();
+  if(state_id != '')
+  {
+   load_json_data('city', state_id,commodity_id);
+  }
+  else
+  {
+   $('#city').html('<option value="">Select city</option>');
+  }
+ });
+});
+</script>

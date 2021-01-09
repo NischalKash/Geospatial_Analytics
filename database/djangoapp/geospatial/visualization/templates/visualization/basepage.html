@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Visualization</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#999999">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_299f7cbe784e421980286d37d8e693a6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <class class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Data Inputs</h4>
+        </div>
+          <div class="container" style="width:600px;">
+    <form action="visualization" method="post">
+    {% csrf_token %}
+    <select name="transfer" id="transfer" class="form-control input-lg">
+    <option value="">Select Transfer Flow</option>
+   </select>
+        <br />
+   <select name="commodity" id="commodity" class="form-control input-lg">
+    <option value="">Select Commodity</option>
+   </select>
+   <br />
+   <select name="state" id="state" class="form-control input-lg">
+    <option value="">Select State</option>
+   </select>
+   <br />
+   <select name="county" id="county" class="form-control input-lg">
+    <option value="">Select County</option>
+   </select>
+    <br />
+   <input type="submit" class="btn btn-primary my-2" value="Visualize">
+    </form>
+  </div>
+        </div>
+      </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="220" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"></svg>
+        <strong>Geospatial Visualization</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+            <div class="folium-map" id="map_299f7cbe784e421980286d37d8e693a6" ></div>
+</body>
+<script>
+var map_299f7cbe784e421980286d37d8e693a6 = L.map(
+                "map_299f7cbe784e421980286d37d8e693a6",
+                {
+                    center: [35.198284, -111.651299],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+            var tile_layer_987ada2a4ee242b88557313a6619bbe0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_299f7cbe784e421980286d37d8e693a6);
+        $(document).ready(function(){
+ var commodity_id,transfer_id;
+ load_json_data('transfer');
+ function load_json_data(id, parent_id,transfer_id,commodity_id)
+ {
+  var html_code = '';
+  $.getJSON('json_file/data.json', function(data){
+
+   html_code += '<option value="">Select '+id+'</option>';
+   $.each(data, function(key, value){
+
+    if(id == 'transfer')
+    {
+     if(value.parent_id == 'select transfer')
+     {
+      html_code += '<option value="'+value.id+'">'+value.id+'</option>';
+     }
+    }
+    else if(id == 'commodity')
+    {
+     if(value.parent_id == parent_id)
+     {
+      html_code += '<option value="'+value.id+'">'+value.id+'</option>';
+     }
+    }
+    else if (id=='state')
+    {
+     if(value.parent_id == parent_id && value.sc_step==transfer_id)
+     {
+      html_code += '<option value="'+value.id+'">'+value.id+'</option>';
+     }
+    }
+    else
+    {
+     if(value.parent_id == parent_id && value.parent_commodity_id==commodity_id && value.sc_step==transfer_id)
+     {
+      html_code += '<option value="'+value.id+'-'+value.county_id+'">'+value.id+' - '+value.county_id+'</option>';
+     }
+    }
+   });
+   $('#'+id).html(html_code);
+  });
+ }
+$(document).on('change', '#transfer', function(){
+  transfer_id = $(this).val();
+  if(transfer_id != '')
+  {
+   load_json_data('commodity', transfer_id);
+  }
+  else
+  {$('#commodity').html('<option value="">Select state</option>');
+   $('#state').html('<option value="">Select state</option>');
+   $('#county').html('<option value="">Select county</option>');
+  }
+ });
+ $(document).on('change', '#commodity', function(){
+  commodity_id = $(this).val();
+  if(commodity_id != '')
+  {
+   load_json_data('state', commodity_id,transfer_id);
+  }
+  else
+  {
+   $('#state').html('<option value="">Select state</option>');
+   $('#county').html('<option value="">Select county</option>');
+  }
+ });
+ $(document).on('change', '#state', function(){
+  var state_id = $(this).val();
+  if(state_id != '')
+  {
+   load_json_data('county', state_id,transfer_id,commodity_id);
+  }
+  else
+  {
+   $('#county').html('<option value="">Select county</option>');
+  }
+ });
+});
+</script>
+</html>

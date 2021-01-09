@@ -1,0 +1,15 @@
+﻿1,"barrel ",Barrels (b) are a common unit of volume for measuring liquid fuels production and consumption. A barrel is approximately 42 gallons.
+2,dollar,A unit of currency equivalent to United States Dollars for the year 2012. FEWSION typically displays currency in millions of dollars ($MM).
+3,GWh,Gigawatt hours (GWh) are a unit of energy for measuring large amounts of energy production and consumption
+4,mcf,Million cubic feet (mcf) is a common unit of volume for measuring natural gas production and consumption.
+5,Mm³,"Million cubic meters (Mm³) is a common unit to measure large volumes of water. "
+6,MW,Megawatts (MW) is a unit of power for measuring large amounts of power production and consumption.
+7,tonne,A unit of mass equivalent to a metric tonne (t). FEWSION typically displays mass units in thousand metric tonnes (kt)
+8,VW Consumption (Mm³),"Virtual water consumption in million cubic meters per year (Mm³ yr⁻¹). "
+9,VW Withdrawals (Mm³),Virtual water withdrawals in million cubic meters per year (Mm³ yr⁻¹).
+10,WSI,WSI is a water scarcity index that measures how much water is consumed relative to how much is available. A WSI closer to 1 indicates that water consumption is close to water availability.
+11,IWSI,IWSI is a measure of water scarcity in a state or countys supply chain. An IWSI closer to 1 indicates that water consumption in a supply chain is close to water availability in a supply chain.
+12,IWSI Contribution,IWSI contribution is a measure of an individual countys contribution to water scarcity in a state or countys supply chain.
+13,BWF - Withdrawals (Mm³),A state or countys blue water footprint (BWF) is measured as a volume of water (Mm³). Its equal to a state or countys water use plus its virtual water balance. Virtual water balance is equivalent to virtual water inflows minus virtual outflows. For the
+14,"BWF - Consumption (Mm³) ",A state or countys blue water footprint (BWF) is measured as a volume of water (Mm³). Its equal to a state or countys water use plus its virtual water balance. Virtual water balance is equivalent to virtual water inflows minus virtual outflows. For the
+15,Shannon Diversity Index (SI),"Shannon Diversity Index is an index to measure supply chain diversity, or resilience. A Shannon Diversity Index closer to 1 indicates a more diverse supply chain where many sources are relied upon equally. A Shannon Diversity Index closer to 0 indicates t"

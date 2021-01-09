@@ -1,0 +1,7 @@
+﻿1,E,"Extraction - Extraction from the environment, at the source, primary industry only"
+2,P,"Production - Manufacturing, processing, value-add processing, business to business service sector flows"
+3,S,"Storage - Storage in the form of mass stockpiling, hubs, reserves"
+4,D,"Distribution - Transportation, warehousing, last mile distribution"
+5,R,Retail - Retail in the form of last mile delivery
+6,C,"Consumption - Consumption by human end users, not companies or producers"
+7,W,"Waste - Waste from both producers and consumers, including recycling and reuse"

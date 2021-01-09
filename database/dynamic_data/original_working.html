@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Webslesson Tutorial | JSON - Dynamic Dependent Dropdown List using Jquery and Ajax</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+  <br /><br />
+  <div class="container" style="width:600px;">
+   <h2 align="center">JSON - Dynamic Dependent Dropdown List using Jquery and Ajax</h2><br /><br />
+   <select name="country" id="country" class="form-control input-lg">
+    <option value="">Select country</option>
+   </select>
+   <br />
+   <select name="state" id="state" class="form-control input-lg">
+    <option value="">Select state</option>
+   </select>
+   <br />
+   <select name="city" id="city" class="form-control input-lg">
+    <option value="">Select city</option>
+   </select>
+  </div>
+ </body>
+</html>
+
+<script>
+$(document).ready(function(){
+ console.log("Entering Here")
+ load_json_data('country');
+ console.log("OKOK")
+ function load_json_data(id, parent_id)
+ {
+  var html_code = '';
+  console.log("Alpha")
+  $.getJSON('1101001.json', function(data){
+
+   html_code += '<option value="">Select '+id+'</option>';
+   $.each(data, function(key, value){
+    if(id == 'country')
+    {
+     console.log("Country")
+     if(value.parent_id == '1101001')
+     {
+      html_code += '<option value="'+value.id+'">'+value.id+'</option>';
+     }
+    }
+    else
+    {
+     console.log("State")
+     if(value.parent_id == parent_id)
+     {
+      html_code += '<option value="'+value.id+'">'+value.id+'</option>';
+     }
+    }
+   });
+   $('#'+id).html(html_code);
+  });
+
+ }
+
+ $(document).on('change', '#country', function(){
+  console.log("Raleigh")
+  var country_id = $(this).val();
+  console.log("Nischal")
+  console.log(country_id)
+  if(country_id != '')
+  {
+   load_json_data('state', country_id);
+  }
+  else
+  {
+   $('#state').html('<option value="">Select state</option>');
+   $('#city').html('<option value="">Select city</option>');
+  }
+ });
+ $(document).on('change', '#state', function(){0
+  var state_id = $(this).val();
+  if(state_id != '')
+  {
+   load_json_data('city', state_id);
+  }
+  else
+  {
+   $('#city').html('<option value="">Select city</option>');
+  }
+ });
+});
+</script>

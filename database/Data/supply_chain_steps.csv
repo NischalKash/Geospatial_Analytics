@@ -1,0 +1,63 @@
+﻿1,E,"Extraction - Extraction from the environment, at the source, primary industry only"
+2,P,"Production - Manufacturing, processing, value-add processing, business to business service sector flows"
+3,S,"Storage - Storage in the form of mass stockpiling, hubs, reserves"
+4,D,"Distribution - Transportation, warehousing, last mile distribution"
+5,R,Retail - Retail in the form of last mile delivery
+6,C,"Consumption - Consumption by human end users, not companies or producers"
+7,W,"Waste - Waste from both producers and consumers, including recycling and reuse"
+8,"C, D",NULL
+9,"C, D, E",NULL
+10,"C, D, P",NULL
+11,"C, D, R",NULL
+12,"C, D, S",NULL
+13,"C, D, W",NULL
+14,"C, E",NULL
+15,"C, E, P",NULL
+16,"C, E, R",NULL
+17,"C, E, S",NULL
+18,"C, E, W",NULL
+19,"C, P",NULL
+20,"C, P, R",NULL
+21,"C, P, S",NULL
+22,"C, P, W",NULL
+23,"C, R",NULL
+24,"C, R, S",NULL
+25,"C, R, W",NULL
+26,"C, S",NULL
+27,"C, S, W",NULL
+28,"C, W",NULL
+29,"D, E",NULL
+30,"D, E, P",NULL
+31,"D, E, R",NULL
+32,"D, E, S",NULL
+33,"D, E, W",NULL
+34,"D, P",NULL
+35,"D, P, R",NULL
+36,"D, P, S",NULL
+37,"D, P, W",NULL
+38,"D, R",NULL
+39,"D, R, S",NULL
+40,"D, R, W",NULL
+41,"D, S",NULL
+42,"D, S, W",NULL
+43,"D, W",NULL
+44,"E, P",NULL
+45,"E, P, R",NULL
+46,"E, P, S",NULL
+47,"E, P, W",NULL
+48,"E, R",NULL
+49,"E, R, S",NULL
+50,"E, R, W",NULL
+51,"E, S",NULL
+52,"E, S, W",NULL
+53,"E, W",NULL
+54,"P, R",NULL
+55,"P, R, S",NULL
+56,"P, R, W",NULL
+57,"P, S",NULL
+58,"P, S, W",NULL
+59,"P, W",NULL
+60,"R, S",NULL
+61,"R, S, W",NULL
+62,"R, W",NULL
+63,"S, W",NULL

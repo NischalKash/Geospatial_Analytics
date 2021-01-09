@@ -1,0 +1,2633 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9e33671d84ee43deacbc97ed2e851265 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9e33671d84ee43deacbc97ed2e851265" ></div>
+        
+</body>
+<script>    
+    
+            var map_9e33671d84ee43deacbc97ed2e851265 = L.map(
+                "map_9e33671d84ee43deacbc97ed2e851265",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    locations: [-112.48849364, 33.3596368342],
+                }
+            );
+            L.control.scale().addTo(map_9e33671d84ee43deacbc97ed2e851265);
+
+            
+
+        
+    
+            var tile_layer_cf087575228f458eb360113502476dcf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_8d526e91d374472b8db19d7f8758d9fc = L.marker(
+                [32.1047629423, -111.790885265],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_ebefac40b6b840e887b25c678e80a532 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d526e91d374472b8db19d7f8758d9fc.setIcon(icon_ebefac40b6b840e887b25c678e80a532);
+        
+    
+        var popup_2ca95d085a854b00ae1108f2e815702c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ea6588b51184eb1be5845d7df20400b = $(`<div id="html_5ea6588b51184eb1be5845d7df20400b" style="width: 100.0%; height: 100.0%;"><strong>Pima County</strong></div>`)[0];
+            popup_2ca95d085a854b00ae1108f2e815702c.setContent(html_5ea6588b51184eb1be5845d7df20400b);
+        
+
+        marker_8d526e91d374472b8db19d7f8758d9fc.bindPopup(popup_2ca95d085a854b00ae1108f2e815702c)
+        ;
+
+        
+    
+    
+            marker_8d526e91d374472b8db19d7f8758d9fc.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d101ce9221949f3ba9a531faf609af3 = L.marker(
+                [33.3596368342, -112.488493643],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_95135b4da474453f8a50494bb55c9b57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9d101ce9221949f3ba9a531faf609af3.setIcon(icon_95135b4da474453f8a50494bb55c9b57);
+        
+    
+        var popup_5790b99441f7467aa44dddc41dd5052f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05aa05b329754126ac853095e9e5b689 = $(`<div id="html_05aa05b329754126ac853095e9e5b689" style="width: 100.0%; height: 100.0%;"><strong>Maricopa County</strong></div>`)[0];
+            popup_5790b99441f7467aa44dddc41dd5052f.setContent(html_05aa05b329754126ac853095e9e5b689);
+        
+
+        marker_9d101ce9221949f3ba9a531faf609af3.bindPopup(popup_5790b99441f7467aa44dddc41dd5052f)
+        ;
+
+        
+    
+    
+            marker_9d101ce9221949f3ba9a531faf609af3.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f0163acfbef5472fb781b1ab67577d29 = L.polyline(
+                [[32.1047629423, -111.790885265], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_7b12ab2e53e54f738dd5cfd7b0bd64ad = L.marker(
+                [31.5299692452, -110.846130423],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_78b7378ff1944b8bad5c478e34efec59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b12ab2e53e54f738dd5cfd7b0bd64ad.setIcon(icon_78b7378ff1944b8bad5c478e34efec59);
+        
+    
+        var popup_a7159aebc48046f0b63c1ec148823519 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc29745ef248446185a3e818f02b5d15 = $(`<div id="html_cc29745ef248446185a3e818f02b5d15" style="width: 100.0%; height: 100.0%;"><strong>Santa Cruz County</strong></div>`)[0];
+            popup_a7159aebc48046f0b63c1ec148823519.setContent(html_cc29745ef248446185a3e818f02b5d15);
+        
+
+        marker_7b12ab2e53e54f738dd5cfd7b0bd64ad.bindPopup(popup_a7159aebc48046f0b63c1ec148823519)
+        ;
+
+        
+    
+    
+            marker_7b12ab2e53e54f738dd5cfd7b0bd64ad.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_92f10633d2d44f408e65fefc01181527 = L.polyline(
+                [[31.5299692452, -110.846130423], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_947a3568cd524059a60d8ad8337a23ea = L.marker(
+                [34.3220994906, -118.222559825],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_7143a286343f4783842cb0fd1eeaf15c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_947a3568cd524059a60d8ad8337a23ea.setIcon(icon_7143a286343f4783842cb0fd1eeaf15c);
+        
+    
+        var popup_73138c79bac64773b0950c4359a97778 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2023f928ffe4a81ae7e434a1900bb70 = $(`<div id="html_a2023f928ffe4a81ae7e434a1900bb70" style="width: 100.0%; height: 100.0%;"><strong>Los Angeles County</strong></div>`)[0];
+            popup_73138c79bac64773b0950c4359a97778.setContent(html_a2023f928ffe4a81ae7e434a1900bb70);
+        
+
+        marker_947a3568cd524059a60d8ad8337a23ea.bindPopup(popup_73138c79bac64773b0950c4359a97778)
+        ;
+
+        
+    
+    
+            marker_947a3568cd524059a60d8ad8337a23ea.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_185be98ba69f49ca877e65282037b89d = L.polyline(
+                [[34.3220994906, -118.222559825], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_5820c00380c64eca9bf42de604e04b92 = L.marker(
+                [33.7039850985, -117.756669306],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_711dd4a4714e4c928b98ca8a8923d834 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5820c00380c64eca9bf42de604e04b92.setIcon(icon_711dd4a4714e4c928b98ca8a8923d834);
+        
+    
+        var popup_1bbd12b722ce43d59f77065d9c4a0f67 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf0e1be937a646158769d04036a3d22a = $(`<div id="html_bf0e1be937a646158769d04036a3d22a" style="width: 100.0%; height: 100.0%;"><strong>Orange County</strong></div>`)[0];
+            popup_1bbd12b722ce43d59f77065d9c4a0f67.setContent(html_bf0e1be937a646158769d04036a3d22a);
+        
+
+        marker_5820c00380c64eca9bf42de604e04b92.bindPopup(popup_1bbd12b722ce43d59f77065d9c4a0f67)
+        ;
+
+        
+    
+    
+            marker_5820c00380c64eca9bf42de604e04b92.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0ba1e6cb524e4ddcb8f8bf32958313f8 = L.polyline(
+                [[33.7039850985, -117.756669306], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_426f95582af1464580a3f92933ab16d9 = L.marker(
+                [33.744374775, -115.994137536],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_c605e992c3d343c5995ee4c191f8e179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_426f95582af1464580a3f92933ab16d9.setIcon(icon_c605e992c3d343c5995ee4c191f8e179);
+        
+    
+        var popup_bc3b1a27d46145ecb4c9ddd5d12b4539 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3c87b80b2304e52bd20961673d12229 = $(`<div id="html_e3c87b80b2304e52bd20961673d12229" style="width: 100.0%; height: 100.0%;"><strong>Riverside County</strong></div>`)[0];
+            popup_bc3b1a27d46145ecb4c9ddd5d12b4539.setContent(html_e3c87b80b2304e52bd20961673d12229);
+        
+
+        marker_426f95582af1464580a3f92933ab16d9.bindPopup(popup_bc3b1a27d46145ecb4c9ddd5d12b4539)
+        ;
+
+        
+    
+    
+            marker_426f95582af1464580a3f92933ab16d9.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1732446de2f74825a5f5cf1b4c2ac5de = L.polyline(
+                [[33.744374775, -115.994137536], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_8132ae25545c4609a4c34905e85cd967 = L.marker(
+                [34.8438726059, -116.175992562],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_e4dcb9bd81bd4144aecf7ccf7ab35c9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8132ae25545c4609a4c34905e85cd967.setIcon(icon_e4dcb9bd81bd4144aecf7ccf7ab35c9b);
+        
+    
+        var popup_283b8924b6d847269ceb0b5c4f0d1d29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c6e6bb8c1844c0c89dfd7cc1a840c54 = $(`<div id="html_9c6e6bb8c1844c0c89dfd7cc1a840c54" style="width: 100.0%; height: 100.0%;"><strong>San Bernardino County</strong></div>`)[0];
+            popup_283b8924b6d847269ceb0b5c4f0d1d29.setContent(html_9c6e6bb8c1844c0c89dfd7cc1a840c54);
+        
+
+        marker_8132ae25545c4609a4c34905e85cd967.bindPopup(popup_283b8924b6d847269ceb0b5c4f0d1d29)
+        ;
+
+        
+    
+    
+            marker_8132ae25545c4609a4c34905e85cd967.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f72510d86b4c4be484370c0911509e9d = L.polyline(
+                [[34.8438726059, -116.175992562], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_24c943d335354290a70be886a7c6d86f = L.marker(
+                [34.4721798755, -119.076108929],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_7bd8330ad3394bc6b9a51281352297c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24c943d335354290a70be886a7c6d86f.setIcon(icon_7bd8330ad3394bc6b9a51281352297c8);
+        
+    
+        var popup_77ed9b6d0a7843e5a27d1c5d0ac91aab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3acf49da1ea140c7b9794d578dcba211 = $(`<div id="html_3acf49da1ea140c7b9794d578dcba211" style="width: 100.0%; height: 100.0%;"><strong>Ventura County</strong></div>`)[0];
+            popup_77ed9b6d0a7843e5a27d1c5d0ac91aab.setContent(html_3acf49da1ea140c7b9794d578dcba211);
+        
+
+        marker_24c943d335354290a70be886a7c6d86f.bindPopup(popup_77ed9b6d0a7843e5a27d1c5d0ac91aab)
+        ;
+
+        
+    
+    
+            marker_24c943d335354290a70be886a7c6d86f.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4dfeb91b8060460f911fcdd57d84b315 = L.polyline(
+                [[34.4721798755, -119.076108929], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_34660083c8144102a092ea78540a1a7b = L.marker(
+                [33.0361936822, -116.738694757],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_62e2ea5986fd46578115d05cdef98a77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34660083c8144102a092ea78540a1a7b.setIcon(icon_62e2ea5986fd46578115d05cdef98a77);
+        
+    
+        var popup_24aac33feb28436f87e554a823c45717 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c9969bfdce442bcb5cb654d06e25460 = $(`<div id="html_2c9969bfdce442bcb5cb654d06e25460" style="width: 100.0%; height: 100.0%;"><strong>San Diego County</strong></div>`)[0];
+            popup_24aac33feb28436f87e554a823c45717.setContent(html_2c9969bfdce442bcb5cb654d06e25460);
+        
+
+        marker_34660083c8144102a092ea78540a1a7b.bindPopup(popup_24aac33feb28436f87e554a823c45717)
+        ;
+
+        
+    
+    
+            marker_34660083c8144102a092ea78540a1a7b.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1c1d935112b64a68819000c8a7e9edc1 = L.polyline(
+                [[33.0361936822, -116.738694757], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_42e4ad89fe8b4e849fd8475ca1fc0c74 = L.marker(
+                [37.6427538176, -121.877536565],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_4bc730af024d40cb84be43ce76e3d2d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_42e4ad89fe8b4e849fd8475ca1fc0c74.setIcon(icon_4bc730af024d40cb84be43ce76e3d2d1);
+        
+    
+        var popup_befae2ddfb9e490bb34c29192f8d0e1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc763b2f662b4271a90d8648576267c0 = $(`<div id="html_bc763b2f662b4271a90d8648576267c0" style="width: 100.0%; height: 100.0%;"><strong>Alameda County</strong></div>`)[0];
+            popup_befae2ddfb9e490bb34c29192f8d0e1f.setContent(html_bc763b2f662b4271a90d8648576267c0);
+        
+
+        marker_42e4ad89fe8b4e849fd8475ca1fc0c74.bindPopup(popup_befae2ddfb9e490bb34c29192f8d0e1f)
+        ;
+
+        
+    
+    
+            marker_42e4ad89fe8b4e849fd8475ca1fc0c74.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_11efbaa2cf124a2f8f735f388f10506e = L.polyline(
+                [[37.6427538176, -121.877536565], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_db471c78fba241789011b1d39beeb95d = L.marker(
+                [37.9132250434, -121.911869623],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_6a560fd19f2b4f6c99c18ecfadc39a05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_db471c78fba241789011b1d39beeb95d.setIcon(icon_6a560fd19f2b4f6c99c18ecfadc39a05);
+        
+    
+        var popup_94871b3119d241f197dc3a5b34fef389 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52f786a177814d8a981339642a58655b = $(`<div id="html_52f786a177814d8a981339642a58655b" style="width: 100.0%; height: 100.0%;"><strong>Contra Costa County</strong></div>`)[0];
+            popup_94871b3119d241f197dc3a5b34fef389.setContent(html_52f786a177814d8a981339642a58655b);
+        
+
+        marker_db471c78fba241789011b1d39beeb95d.bindPopup(popup_94871b3119d241f197dc3a5b34fef389)
+        ;
+
+        
+    
+    
+            marker_db471c78fba241789011b1d39beeb95d.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1c59ce881d1345f8a3ae0b3a38110633 = L.polyline(
+                [[37.9132250434, -121.911869623], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_c5abb5e9b4704830a9c857271fffce0d = L.marker(
+                [38.0730544802, -122.720201149],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_7d102d88727c4bf3a20a84f6b201390c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c5abb5e9b4704830a9c857271fffce0d.setIcon(icon_7d102d88727c4bf3a20a84f6b201390c);
+        
+    
+        var popup_9e7027d387664d6f881ff6d224d042da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70f614cafd8a4a4faba9fa6b6d5922c6 = $(`<div id="html_70f614cafd8a4a4faba9fa6b6d5922c6" style="width: 100.0%; height: 100.0%;"><strong>Marin County</strong></div>`)[0];
+            popup_9e7027d387664d6f881ff6d224d042da.setContent(html_70f614cafd8a4a4faba9fa6b6d5922c6);
+        
+
+        marker_c5abb5e9b4704830a9c857271fffce0d.bindPopup(popup_9e7027d387664d6f881ff6d224d042da)
+        ;
+
+        
+    
+    
+            marker_c5abb5e9b4704830a9c857271fffce0d.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5b6be7935ae24c118176a4938fd782fb = L.polyline(
+                [[38.0730544802, -122.720201149], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_eb35aa9c06ad48edbf5c3a1eef5fa912 = L.marker(
+                [38.5077742089, -122.32741172],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_d754d1a893104f84bf1e44e0cb273230 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb35aa9c06ad48edbf5c3a1eef5fa912.setIcon(icon_d754d1a893104f84bf1e44e0cb273230);
+        
+    
+        var popup_212f8eb88fd2454baeb3c5b78b42f18b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2e0e6324fa1478080c37814460c2ff4 = $(`<div id="html_e2e0e6324fa1478080c37814460c2ff4" style="width: 100.0%; height: 100.0%;"><strong>Napa County</strong></div>`)[0];
+            popup_212f8eb88fd2454baeb3c5b78b42f18b.setContent(html_e2e0e6324fa1478080c37814460c2ff4);
+        
+
+        marker_eb35aa9c06ad48edbf5c3a1eef5fa912.bindPopup(popup_212f8eb88fd2454baeb3c5b78b42f18b)
+        ;
+
+        
+    
+    
+            marker_eb35aa9c06ad48edbf5c3a1eef5fa912.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c8a852b5d9fb4b228e2bcf3a80a78121 = L.polyline(
+                [[38.5077742089, -122.32741172], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_f077ad62c43245419c4e667741d50342 = L.marker(
+                [37.7467002522, -122.430102576],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_d09e4b6fde1542d7b88cba8f169a7c7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f077ad62c43245419c4e667741d50342.setIcon(icon_d09e4b6fde1542d7b88cba8f169a7c7b);
+        
+    
+        var popup_a9aa28d92c8c4dab93a3c578fccac86a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c238a1a6223645e485b7a88a41b4054a = $(`<div id="html_c238a1a6223645e485b7a88a41b4054a" style="width: 100.0%; height: 100.0%;"><strong>San Francisco County</strong></div>`)[0];
+            popup_a9aa28d92c8c4dab93a3c578fccac86a.setContent(html_c238a1a6223645e485b7a88a41b4054a);
+        
+
+        marker_f077ad62c43245419c4e667741d50342.bindPopup(popup_a9aa28d92c8c4dab93a3c578fccac86a)
+        ;
+
+        
+    
+    
+            marker_f077ad62c43245419c4e667741d50342.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6a055b1971634c8dbac9d599e4bb9492 = L.polyline(
+                [[37.7467002522, -122.430102576], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_f8748c4d43134a76af6abe9b988d40dc = L.marker(
+                [37.9346844694, -121.262807503],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_5416abdfdcdd47afa8548ae9d64a2857 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8748c4d43134a76af6abe9b988d40dc.setIcon(icon_5416abdfdcdd47afa8548ae9d64a2857);
+        
+    
+        var popup_8b9ef673a0544fa5b2e6a174b59fc5ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f84194e5a5741e4a6e234c2fb5d6ce0 = $(`<div id="html_9f84194e5a5741e4a6e234c2fb5d6ce0" style="width: 100.0%; height: 100.0%;"><strong>San Joaquin County</strong></div>`)[0];
+            popup_8b9ef673a0544fa5b2e6a174b59fc5ab.setContent(html_9f84194e5a5741e4a6e234c2fb5d6ce0);
+        
+
+        marker_f8748c4d43134a76af6abe9b988d40dc.bindPopup(popup_8b9ef673a0544fa5b2e6a174b59fc5ab)
+        ;
+
+        
+    
+    
+            marker_f8748c4d43134a76af6abe9b988d40dc.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6e1d749fc3c044468df91b379d04f83e = L.polyline(
+                [[37.9346844694, -121.262807503], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_a2e6002249294de2b3839ae48429560b = L.marker(
+                [37.4243984361, -122.322184696],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_e2b2b5df5b0248bcba02ac82900d991d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2e6002249294de2b3839ae48429560b.setIcon(icon_e2b2b5df5b0248bcba02ac82900d991d);
+        
+    
+        var popup_419bb6b97c334460ab1c4043579f14ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_055c8f99cf0d4c5396b865378dc7a675 = $(`<div id="html_055c8f99cf0d4c5396b865378dc7a675" style="width: 100.0%; height: 100.0%;"><strong>San Mateo County</strong></div>`)[0];
+            popup_419bb6b97c334460ab1c4043579f14ec.setContent(html_055c8f99cf0d4c5396b865378dc7a675);
+        
+
+        marker_a2e6002249294de2b3839ae48429560b.bindPopup(popup_419bb6b97c334460ab1c4043579f14ec)
+        ;
+
+        
+    
+    
+            marker_a2e6002249294de2b3839ae48429560b.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c32c5c7989bb4bdd90fbb1b37493d61f = L.polyline(
+                [[37.4243984361, -122.322184696], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_1b81d3a3021d455eaf6545dda4d775e7 = L.marker(
+                [37.2273191707, -121.6833781],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_02eafc0255ea4db98ab40e70682c47ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b81d3a3021d455eaf6545dda4d775e7.setIcon(icon_02eafc0255ea4db98ab40e70682c47ea);
+        
+    
+        var popup_e4fe8884649840ff881a8edff209700f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be1be7d242d84bd2829e9caffc4ebfe4 = $(`<div id="html_be1be7d242d84bd2829e9caffc4ebfe4" style="width: 100.0%; height: 100.0%;"><strong>Santa Clara County</strong></div>`)[0];
+            popup_e4fe8884649840ff881a8edff209700f.setContent(html_be1be7d242d84bd2829e9caffc4ebfe4);
+        
+
+        marker_1b81d3a3021d455eaf6545dda4d775e7.bindPopup(popup_e4fe8884649840ff881a8edff209700f)
+        ;
+
+        
+    
+    
+            marker_1b81d3a3021d455eaf6545dda4d775e7.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c57d15efcfc340668f487ba97d804a86 = L.polyline(
+                [[37.2273191707, -121.6833781], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_c3229cc8bbad4d5abaf995eb0a62640b = L.marker(
+                [37.0547142229, -121.984778244],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_8a1336b9c98d46419b0fb2dcf29fb3bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3229cc8bbad4d5abaf995eb0a62640b.setIcon(icon_8a1336b9c98d46419b0fb2dcf29fb3bf);
+        
+    
+        var popup_6de8baa9d01943a6a9a4bb4634bc8d6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5cc6f0e1b414fbab8678f95e3879585 = $(`<div id="html_f5cc6f0e1b414fbab8678f95e3879585" style="width: 100.0%; height: 100.0%;"><strong>Santa Cruz County</strong></div>`)[0];
+            popup_6de8baa9d01943a6a9a4bb4634bc8d6e.setContent(html_f5cc6f0e1b414fbab8678f95e3879585);
+        
+
+        marker_c3229cc8bbad4d5abaf995eb0a62640b.bindPopup(popup_6de8baa9d01943a6a9a4bb4634bc8d6e)
+        ;
+
+        
+    
+    
+            marker_c3229cc8bbad4d5abaf995eb0a62640b.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_acb3146443a14ed5bbd85e157f9f0bb5 = L.polyline(
+                [[37.0547142229, -121.984778244], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_39301ce02d804b62a4850875c54fd756 = L.marker(
+                [38.2891096846, -121.912689117],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_ef5b6b88712e45bda96652cd657b99ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39301ce02d804b62a4850875c54fd756.setIcon(icon_ef5b6b88712e45bda96652cd657b99ba);
+        
+    
+        var popup_aa882fe26b0243c987e52fb034d6397b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c735812853134d389a7f7a85041fafdd = $(`<div id="html_c735812853134d389a7f7a85041fafdd" style="width: 100.0%; height: 100.0%;"><strong>Solano County</strong></div>`)[0];
+            popup_aa882fe26b0243c987e52fb034d6397b.setContent(html_c735812853134d389a7f7a85041fafdd);
+        
+
+        marker_39301ce02d804b62a4850875c54fd756.bindPopup(popup_aa882fe26b0243c987e52fb034d6397b)
+        ;
+
+        
+    
+    
+            marker_39301ce02d804b62a4850875c54fd756.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_672cc25c48cc42fea3efd02f22a032d2 = L.polyline(
+                [[38.2891096846, -121.912689117], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_9cbeb08eba524965b4b939b1424c2e0d = L.marker(
+                [38.5281525005, -122.887805267],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_5be7a0366e474a4086afabeed88ac96a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cbeb08eba524965b4b939b1424c2e0d.setIcon(icon_5be7a0366e474a4086afabeed88ac96a);
+        
+    
+        var popup_40915ae85ba445e1b3f35d3c562d3604 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f00ceb9a52a447048b49319fe7781875 = $(`<div id="html_f00ceb9a52a447048b49319fe7781875" style="width: 100.0%; height: 100.0%;"><strong>Sonoma County</strong></div>`)[0];
+            popup_40915ae85ba445e1b3f35d3c562d3604.setContent(html_f00ceb9a52a447048b49319fe7781875);
+        
+
+        marker_9cbeb08eba524965b4b939b1424c2e0d.bindPopup(popup_40915ae85ba445e1b3f35d3c562d3604)
+        ;
+
+        
+    
+    
+            marker_9cbeb08eba524965b4b939b1424c2e0d.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cb520116400a4a8fa3ceafb7cad160a4 = L.polyline(
+                [[38.5281525005, -122.887805267], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_08c88eeffc9040539e81515b1a932744 = L.marker(
+                [36.7542967044, -119.641138996],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_159d50641b90400a9c5138aad52df2ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_08c88eeffc9040539e81515b1a932744.setIcon(icon_159d50641b90400a9c5138aad52df2ca);
+        
+    
+        var popup_bcf4fb7d7602495fbb2e72557c8428c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ec8067ce87e4132b2f7c0cda3a3cf32 = $(`<div id="html_6ec8067ce87e4132b2f7c0cda3a3cf32" style="width: 100.0%; height: 100.0%;"><strong>Fresno County</strong></div>`)[0];
+            popup_bcf4fb7d7602495fbb2e72557c8428c6.setContent(html_6ec8067ce87e4132b2f7c0cda3a3cf32);
+        
+
+        marker_08c88eeffc9040539e81515b1a932744.bindPopup(popup_bcf4fb7d7602495fbb2e72557c8428c6)
+        ;
+
+        
+    
+    
+            marker_08c88eeffc9040539e81515b1a932744.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d072530316942cda45a437572cd2dd1 = L.polyline(
+                [[36.7542967044, -119.641138996], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_ab327e95c20b458dbcb279df013d8f27 = L.marker(
+                [37.2129874278, -119.746069398],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_33b669255a604aeb95511ab7061abedf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ab327e95c20b458dbcb279df013d8f27.setIcon(icon_33b669255a604aeb95511ab7061abedf);
+        
+    
+        var popup_050d66b401a24fbebdeef75ee1234786 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31237ffe389b43ea840bdecfcaf42789 = $(`<div id="html_31237ffe389b43ea840bdecfcaf42789" style="width: 100.0%; height: 100.0%;"><strong>Madera County</strong></div>`)[0];
+            popup_050d66b401a24fbebdeef75ee1234786.setContent(html_31237ffe389b43ea840bdecfcaf42789);
+        
+
+        marker_ab327e95c20b458dbcb279df013d8f27.bindPopup(popup_050d66b401a24fbebdeef75ee1234786)
+        ;
+
+        
+    
+    
+            marker_ab327e95c20b458dbcb279df013d8f27.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e0f21d38f3b9479a8dfb7990b61bc50e = L.polyline(
+                [[37.2129874278, -119.746069398], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_25a799c746c34506965d1306c7ef6821 = L.marker(
+                [36.5085061706, -117.406486113],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_e5f7d8a0d2d148d0a2a4202e33a1de37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25a799c746c34506965d1306c7ef6821.setIcon(icon_e5f7d8a0d2d148d0a2a4202e33a1de37);
+        
+    
+        var popup_527f00c8c7ae46eba4834935e47480ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d693fe3ee7348028e02e0399af579c5 = $(`<div id="html_6d693fe3ee7348028e02e0399af579c5" style="width: 100.0%; height: 100.0%;"><strong>Inyo County</strong></div>`)[0];
+            popup_527f00c8c7ae46eba4834935e47480ca.setContent(html_6d693fe3ee7348028e02e0399af579c5);
+        
+
+        marker_25a799c746c34506965d1306c7ef6821.bindPopup(popup_527f00c8c7ae46eba4834935e47480ca)
+        ;
+
+        
+    
+    
+            marker_25a799c746c34506965d1306c7ef6821.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f7d2d04802334a5a9368e71a3827a294 = L.polyline(
+                [[36.5085061706, -117.406486113], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_3e35533174374454bb0530dad0dd1d1f = L.marker(
+                [35.3452714218, -118.730511299],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_df0e8b8146464a07a150152ee8bf05e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e35533174374454bb0530dad0dd1d1f.setIcon(icon_df0e8b8146464a07a150152ee8bf05e9);
+        
+    
+        var popup_f529ea8810f949c487b76a364d0f6e9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab44c1e827db48f2b676a1c875b282f2 = $(`<div id="html_ab44c1e827db48f2b676a1c875b282f2" style="width: 100.0%; height: 100.0%;"><strong>Kern County</strong></div>`)[0];
+            popup_f529ea8810f949c487b76a364d0f6e9a.setContent(html_ab44c1e827db48f2b676a1c875b282f2);
+        
+
+        marker_3e35533174374454bb0530dad0dd1d1f.bindPopup(popup_f529ea8810f949c487b76a364d0f6e9a)
+        ;
+
+        
+    
+    
+            marker_3e35533174374454bb0530dad0dd1d1f.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_921c1927befd497085d0a555b9908968 = L.polyline(
+                [[35.3452714218, -118.730511299], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_27297ee09b4949c19b6b5de3d364b37b = L.marker(
+                [36.0785190839, -119.803372972],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_f6a84dbc033340e191fd48a034064dac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27297ee09b4949c19b6b5de3d364b37b.setIcon(icon_f6a84dbc033340e191fd48a034064dac);
+        
+    
+        var popup_6e587e689a9a49bf8f491b0d69374cf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a38292007b6438bbb1df058bc3f894d = $(`<div id="html_4a38292007b6438bbb1df058bc3f894d" style="width: 100.0%; height: 100.0%;"><strong>Kings County</strong></div>`)[0];
+            popup_6e587e689a9a49bf8f491b0d69374cf1.setContent(html_4a38292007b6438bbb1df058bc3f894d);
+        
+
+        marker_27297ee09b4949c19b6b5de3d364b37b.bindPopup(popup_6e587e689a9a49bf8f491b0d69374cf1)
+        ;
+
+        
+    
+    
+            marker_27297ee09b4949c19b6b5de3d364b37b.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1f4c769abf664418a6efe4ba0f8c2501 = L.polyline(
+                [[36.0785190839, -119.803372972], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_8796db7b337b4dbcb4aebdf3d9f74686 = L.marker(
+                [37.1870264719, -120.704410085],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_e893ec7dea0c4fa684cedda0b8a083e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8796db7b337b4dbcb4aebdf3d9f74686.setIcon(icon_e893ec7dea0c4fa684cedda0b8a083e5);
+        
+    
+        var popup_bde8566acfee410096fdbac89f94e847 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df669566f96e443a91db5e3306011605 = $(`<div id="html_df669566f96e443a91db5e3306011605" style="width: 100.0%; height: 100.0%;"><strong>Merced County</strong></div>`)[0];
+            popup_bde8566acfee410096fdbac89f94e847.setContent(html_df669566f96e443a91db5e3306011605);
+        
+
+        marker_8796db7b337b4dbcb4aebdf3d9f74686.bindPopup(popup_bde8566acfee410096fdbac89f94e847)
+        ;
+
+        
+    
+    
+            marker_8796db7b337b4dbcb4aebdf3d9f74686.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_64e92b4a88f24936866bfb08e06acca5 = L.polyline(
+                [[37.1870264719, -120.704410085], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_73afbba030f445f7975451eac3f2fbbb = L.marker(
+                [35.3888375829, -120.400141336],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_ac04956ec50146c79d670353658afe4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_73afbba030f445f7975451eac3f2fbbb.setIcon(icon_ac04956ec50146c79d670353658afe4b);
+        
+    
+        var popup_93984cccd7194652b48e272cd188d488 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a18545c1d28f4f3cbd49083ae1bac62c = $(`<div id="html_a18545c1d28f4f3cbd49083ae1bac62c" style="width: 100.0%; height: 100.0%;"><strong>San Luis Obispo County</strong></div>`)[0];
+            popup_93984cccd7194652b48e272cd188d488.setContent(html_a18545c1d28f4f3cbd49083ae1bac62c);
+        
+
+        marker_73afbba030f445f7975451eac3f2fbbb.bindPopup(popup_93984cccd7194652b48e272cd188d488)
+        ;
+
+        
+    
+    
+            marker_73afbba030f445f7975451eac3f2fbbb.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b8c5346cbabe4bc8b82092b948a8e481 = L.polyline(
+                [[35.3888375829, -120.400141336], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_e0ca1b8a2dbf4cf09a4c6bb927995b01 = L.marker(
+                [34.6719714446, -120.012835839],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_1759d06c26704d2496b779553759eae7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0ca1b8a2dbf4cf09a4c6bb927995b01.setIcon(icon_1759d06c26704d2496b779553759eae7);
+        
+    
+        var popup_9ffa789dc3714800a179d3b1c82252c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8b4484d2c2d483984a0ca816df9d37e = $(`<div id="html_a8b4484d2c2d483984a0ca816df9d37e" style="width: 100.0%; height: 100.0%;"><strong>Santa Barbara County</strong></div>`)[0];
+            popup_9ffa789dc3714800a179d3b1c82252c2.setContent(html_a8b4484d2c2d483984a0ca816df9d37e);
+        
+
+        marker_e0ca1b8a2dbf4cf09a4c6bb927995b01.bindPopup(popup_9ffa789dc3714800a179d3b1c82252c2)
+        ;
+
+        
+    
+    
+            marker_e0ca1b8a2dbf4cf09a4c6bb927995b01.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b2a88bc24d04458ab8433b8550a683d7 = L.polyline(
+                [[34.6719714446, -120.012835839], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_551e414ce5f04d56b4fd387c8f9c20f4 = L.marker(
+                [36.2206772391, -118.793140987],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_a90187b792464bd894ea077484bb9ff1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_551e414ce5f04d56b4fd387c8f9c20f4.setIcon(icon_a90187b792464bd894ea077484bb9ff1);
+        
+    
+        var popup_b9bfb4d9b07b48d2a9b1005f24ee86ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e9945646e644940bd1639e2474dade2 = $(`<div id="html_3e9945646e644940bd1639e2474dade2" style="width: 100.0%; height: 100.0%;"><strong>Tulare County</strong></div>`)[0];
+            popup_b9bfb4d9b07b48d2a9b1005f24ee86ce.setContent(html_3e9945646e644940bd1639e2474dade2);
+        
+
+        marker_551e414ce5f04d56b4fd387c8f9c20f4.bindPopup(popup_b9bfb4d9b07b48d2a9b1005f24ee86ce)
+        ;
+
+        
+    
+    
+            marker_551e414ce5f04d56b4fd387c8f9c20f4.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7b3c4a28e2f34e97941e926e0b713267 = L.polyline(
+                [[36.2206772391, -118.793140987], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_4de13fba3131417086db84e0109a9ddb = L.marker(
+                [21.4532861982, -157.977424322],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_31e971ae4b164d7eb3fd5a412e92e122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4de13fba3131417086db84e0109a9ddb.setIcon(icon_31e971ae4b164d7eb3fd5a412e92e122);
+        
+    
+        var popup_25ccce9fe4e241d190524dc46c3b7e56 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f7a9381da2a4af49606a441a89e2f36 = $(`<div id="html_5f7a9381da2a4af49606a441a89e2f36" style="width: 100.0%; height: 100.0%;"><strong>Honolulu County</strong></div>`)[0];
+            popup_25ccce9fe4e241d190524dc46c3b7e56.setContent(html_5f7a9381da2a4af49606a441a89e2f36);
+        
+
+        marker_4de13fba3131417086db84e0109a9ddb.bindPopup(popup_25ccce9fe4e241d190524dc46c3b7e56)
+        ;
+
+        
+    
+    
+            marker_4de13fba3131417086db84e0109a9ddb.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8959878d0e7f46dab213b02fe13e6bc6 = L.polyline(
+                [[21.4532861982, -157.977424322], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_9cdf4144be7f4a049142090b038a8074 = L.marker(
+                [20.8655923134, -156.553958938],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_a4728d2528d941e9beb8330643be2abb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cdf4144be7f4a049142090b038a8074.setIcon(icon_a4728d2528d941e9beb8330643be2abb);
+        
+    
+        var popup_0bae4849f9fa4f9b8fface78578f34d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee828e0caf1e483187f0a61f5dfecbcc = $(`<div id="html_ee828e0caf1e483187f0a61f5dfecbcc" style="width: 100.0%; height: 100.0%;"><strong>Maui County</strong></div>`)[0];
+            popup_0bae4849f9fa4f9b8fface78578f34d5.setContent(html_ee828e0caf1e483187f0a61f5dfecbcc);
+        
+
+        marker_9cdf4144be7f4a049142090b038a8074.bindPopup(popup_0bae4849f9fa4f9b8fface78578f34d5)
+        ;
+
+        
+    
+    
+            marker_9cdf4144be7f4a049142090b038a8074.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b1d60e69e8e244c18ae3a2d3361868b0 = L.polyline(
+                [[20.8655923134, -156.553958938], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_eb3e6ad7af9042d092fe830214d28b44 = L.marker(
+                [43.4436571531, -116.234724179],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_3efb1ca31e5f438ca23349c6b72ff775 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb3e6ad7af9042d092fe830214d28b44.setIcon(icon_3efb1ca31e5f438ca23349c6b72ff775);
+        
+    
+        var popup_e036e717a7434ce3b7c268647e606a6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbb36d4478824c59b998ecc34a153600 = $(`<div id="html_cbb36d4478824c59b998ecc34a153600" style="width: 100.0%; height: 100.0%;"><strong>Ada County</strong></div>`)[0];
+            popup_e036e717a7434ce3b7c268647e606a6a.setContent(html_cbb36d4478824c59b998ecc34a153600);
+        
+
+        marker_eb3e6ad7af9042d092fe830214d28b44.bindPopup(popup_e036e717a7434ce3b7c268647e606a6a)
+        ;
+
+        
+    
+    
+            marker_eb3e6ad7af9042d092fe830214d28b44.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3a2c4c22c316445284b75780973dbfe5 = L.polyline(
+                [[43.4436571531, -116.234724179], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_c6039a4ca62543bfb81004b75371eede = L.marker(
+                [43.2109610862, -112.389956498],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_90a87a02a44e43baa155a919cc5ce913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6039a4ca62543bfb81004b75371eede.setIcon(icon_90a87a02a44e43baa155a919cc5ce913);
+        
+    
+        var popup_a2ce7b051cde492d9717b16f916f1ac6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75cf42d1aef4485bba883550a3e0c0f2 = $(`<div id="html_75cf42d1aef4485bba883550a3e0c0f2" style="width: 100.0%; height: 100.0%;"><strong>Bingham County</strong></div>`)[0];
+            popup_a2ce7b051cde492d9717b16f916f1ac6.setContent(html_75cf42d1aef4485bba883550a3e0c0f2);
+        
+
+        marker_c6039a4ca62543bfb81004b75371eede.bindPopup(popup_a2ce7b051cde492d9717b16f916f1ac6)
+        ;
+
+        
+    
+    
+            marker_c6039a4ca62543bfb81004b75371eede.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f8853c5528c24ba883574a9161a46c79 = L.polyline(
+                [[43.2109610862, -112.389956498], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_43fd2fea6efb46a2ab37604cfa50900a = L.marker(
+                [43.3862049942, -111.612852986],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_385c47edadfa4f24b502cd872d2f476c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_43fd2fea6efb46a2ab37604cfa50900a.setIcon(icon_385c47edadfa4f24b502cd872d2f476c);
+        
+    
+        var popup_c40ee5eb9fcd4d7ea4cb9e75eab5c819 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c355671ef85d437ebce1da8525545309 = $(`<div id="html_c355671ef85d437ebce1da8525545309" style="width: 100.0%; height: 100.0%;"><strong>Bonneville County</strong></div>`)[0];
+            popup_c40ee5eb9fcd4d7ea4cb9e75eab5c819.setContent(html_c355671ef85d437ebce1da8525545309);
+        
+
+        marker_43fd2fea6efb46a2ab37604cfa50900a.bindPopup(popup_c40ee5eb9fcd4d7ea4cb9e75eab5c819)
+        ;
+
+        
+    
+    
+            marker_43fd2fea6efb46a2ab37604cfa50900a.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_97efbb0e668747789108c911d4c47437 = L.polyline(
+                [[43.3862049942, -111.612852986], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_f453a14686fc41c19147354318de83c2 = L.marker(
+                [43.6200710579, -116.703673881],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_d709b1c93c6747489cdfb512465b4674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f453a14686fc41c19147354318de83c2.setIcon(icon_d709b1c93c6747489cdfb512465b4674);
+        
+    
+        var popup_246d1e342cb047978fa9aab9f44dbb30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cb8f4f2e76b4850a56a8913b3e9b55e = $(`<div id="html_4cb8f4f2e76b4850a56a8913b3e9b55e" style="width: 100.0%; height: 100.0%;"><strong>Canyon County</strong></div>`)[0];
+            popup_246d1e342cb047978fa9aab9f44dbb30.setContent(html_4cb8f4f2e76b4850a56a8913b3e9b55e);
+        
+
+        marker_f453a14686fc41c19147354318de83c2.bindPopup(popup_246d1e342cb047978fa9aab9f44dbb30)
+        ;
+
+        
+    
+    
+            marker_f453a14686fc41c19147354318de83c2.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bd624317cfa346149dd14327268cb8c5 = L.polyline(
+                [[43.6200710579, -116.703673881], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_345ff5f8e5bb48bebe2c7093d947dd86 = L.marker(
+                [42.6860160576, -114.255856775],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_1da714b126bc4e928b30ce3490824daf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_345ff5f8e5bb48bebe2c7093d947dd86.setIcon(icon_1da714b126bc4e928b30ce3490824daf);
+        
+    
+        var popup_e90b29db6b704208b62148e649f2b64c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c15f550f9c84bc4bfdeeb8cc5bf70bb = $(`<div id="html_1c15f550f9c84bc4bfdeeb8cc5bf70bb" style="width: 100.0%; height: 100.0%;"><strong>Jerome County</strong></div>`)[0];
+            popup_e90b29db6b704208b62148e649f2b64c.setContent(html_1c15f550f9c84bc4bfdeeb8cc5bf70bb);
+        
+
+        marker_345ff5f8e5bb48bebe2c7093d947dd86.bindPopup(popup_e90b29db6b704208b62148e649f2b64c)
+        ;
+
+        
+    
+    
+            marker_345ff5f8e5bb48bebe2c7093d947dd86.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9167ed6171ca4283b049ce7f32a1e8f3 = L.polyline(
+                [[42.6860160576, -114.255856775], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_ec121cf4d24e41bfa79c491319100405 = L.marker(
+                [42.3512845145, -114.654587371],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_48b14d05464d41ce99321c315b24f14d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec121cf4d24e41bfa79c491319100405.setIcon(icon_48b14d05464d41ce99321c315b24f14d);
+        
+    
+        var popup_88113cb63fed45b4967e32e376e56994 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffa63a5812ec4cb7b9505ce07b6daee5 = $(`<div id="html_ffa63a5812ec4cb7b9505ce07b6daee5" style="width: 100.0%; height: 100.0%;"><strong>Twin Falls County</strong></div>`)[0];
+            popup_88113cb63fed45b4967e32e376e56994.setContent(html_ffa63a5812ec4cb7b9505ce07b6daee5);
+        
+
+        marker_ec121cf4d24e41bfa79c491319100405.bindPopup(popup_88113cb63fed45b4967e32e376e56994)
+        ;
+
+        
+    
+    
+            marker_ec121cf4d24e41bfa79c491319100405.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8add83b96c9b45628e2db092cc96edf3 = L.polyline(
+                [[42.3512845145, -114.654587371], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_34596dca1ae442588f12bb5dc132c0a3 = L.marker(
+                [41.9616150953, -86.4234514155],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_de38f222e33b446c867423722e5ddf0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34596dca1ae442588f12bb5dc132c0a3.setIcon(icon_de38f222e33b446c867423722e5ddf0b);
+        
+    
+        var popup_e9814166b55e4bd09b40dcbf66f560b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0becbdd711c34070b39ccd4442375896 = $(`<div id="html_0becbdd711c34070b39ccd4442375896" style="width: 100.0%; height: 100.0%;"><strong>Berrien County</strong></div>`)[0];
+            popup_e9814166b55e4bd09b40dcbf66f560b9.setContent(html_0becbdd711c34070b39ccd4442375896);
+        
+
+        marker_34596dca1ae442588f12bb5dc132c0a3.bindPopup(popup_e9814166b55e4bd09b40dcbf66f560b9)
+        ;
+
+        
+    
+    
+            marker_34596dca1ae442588f12bb5dc132c0a3.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f30276d7a1ab487e90a9b7db52a6a6d2 = L.polyline(
+                [[41.9616150953, -86.4234514155], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_10071fe19e3844ea843b088c5035dc42 = L.marker(
+                [46.8906064234, -88.6906173046],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_1fde7370a89d44819479142e3c55ae0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10071fe19e3844ea843b088c5035dc42.setIcon(icon_1fde7370a89d44819479142e3c55ae0f);
+        
+    
+        var popup_5986ac3572b342fb83e45035ef460954 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdff6d94ea1d4feda61b7635fcd57461 = $(`<div id="html_fdff6d94ea1d4feda61b7635fcd57461" style="width: 100.0%; height: 100.0%;"><strong>Houghton County</strong></div>`)[0];
+            popup_5986ac3572b342fb83e45035ef460954.setContent(html_fdff6d94ea1d4feda61b7635fcd57461);
+        
+
+        marker_10071fe19e3844ea843b088c5035dc42.bindPopup(popup_5986ac3572b342fb83e45035ef460954)
+        ;
+
+        
+    
+    
+            marker_10071fe19e3844ea843b088c5035dc42.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5fb931ba0c09483db83f277435fddb99 = L.polyline(
+                [[46.8906064234, -88.6906173046], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_a0ca7ffbd6264516af66e13133d83769 = L.marker(
+                [42.2505274747, -85.5336687351],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_e081db37d3704f7aa216fd6a8fafeca8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a0ca7ffbd6264516af66e13133d83769.setIcon(icon_e081db37d3704f7aa216fd6a8fafeca8);
+        
+    
+        var popup_9e776f53443645e7a072d8ef1678af7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b34697341da43d2a13369af2b42d067 = $(`<div id="html_2b34697341da43d2a13369af2b42d067" style="width: 100.0%; height: 100.0%;"><strong>Kalamazoo County</strong></div>`)[0];
+            popup_9e776f53443645e7a072d8ef1678af7f.setContent(html_2b34697341da43d2a13369af2b42d067);
+        
+
+        marker_a0ca7ffbd6264516af66e13133d83769.bindPopup(popup_9e776f53443645e7a072d8ef1678af7f)
+        ;
+
+        
+    
+    
+            marker_a0ca7ffbd6264516af66e13133d83769.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_84df2e8e4d6f4b51bc90e27833d47bef = L.polyline(
+                [[42.2505274747, -85.5336687351], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_f1b8ab87559d43c6a7dad183536fc4db = L.marker(
+                [46.4321114434, -87.6361019345],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_6f6c369aa1de4bb59dccb7c129691036 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1b8ab87559d43c6a7dad183536fc4db.setIcon(icon_6f6c369aa1de4bb59dccb7c129691036);
+        
+    
+        var popup_e9a98bdd4b134d7cbaacaab1aa6a040e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fcc3ea122cb489d96ceeab1c9a69ddd = $(`<div id="html_8fcc3ea122cb489d96ceeab1c9a69ddd" style="width: 100.0%; height: 100.0%;"><strong>Marquette County</strong></div>`)[0];
+            popup_e9a98bdd4b134d7cbaacaab1aa6a040e.setContent(html_8fcc3ea122cb489d96ceeab1c9a69ddd);
+        
+
+        marker_f1b8ab87559d43c6a7dad183536fc4db.bindPopup(popup_e9a98bdd4b134d7cbaacaab1aa6a040e)
+        ;
+
+        
+    
+    
+            marker_f1b8ab87559d43c6a7dad183536fc4db.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a7c1fe57ec14f60ba397aed9aa3e6f9 = L.polyline(
+                [[46.4321114434, -87.6361019345], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_af8309e8ef0445a4b775fab278f801a9 = L.marker(
+                [38.9046824574, -119.608583796],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_56a8d556b90b4b4bbbd8d6e1e4e7c559 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_af8309e8ef0445a4b775fab278f801a9.setIcon(icon_56a8d556b90b4b4bbbd8d6e1e4e7c559);
+        
+    
+        var popup_1742c23af8ac4ef983758d6d161dd091 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3160f756b18a4b0ba3686f5d47b35097 = $(`<div id="html_3160f756b18a4b0ba3686f5d47b35097" style="width: 100.0%; height: 100.0%;"><strong>Douglas County</strong></div>`)[0];
+            popup_1742c23af8ac4ef983758d6d161dd091.setContent(html_3160f756b18a4b0ba3686f5d47b35097);
+        
+
+        marker_af8309e8ef0445a4b775fab278f801a9.bindPopup(popup_1742c23af8ac4ef983758d6d161dd091)
+        ;
+
+        
+    
+    
+            marker_af8309e8ef0445a4b775fab278f801a9.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_06907c0587d5481689f6093095fd4ba1 = L.polyline(
+                [[38.9046824574, -119.608583796], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_44011a6cd8224acfaf1b0be144058ac6 = L.marker(
+                [39.0188359046, -119.178545803],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_4650b3f296244365b2841119edb7ba91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44011a6cd8224acfaf1b0be144058ac6.setIcon(icon_4650b3f296244365b2841119edb7ba91);
+        
+    
+        var popup_47feda9644314992bedfeeb185104ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_491509753d1644e3919750c901bc2d9f = $(`<div id="html_491509753d1644e3919750c901bc2d9f" style="width: 100.0%; height: 100.0%;"><strong>Lyon County</strong></div>`)[0];
+            popup_47feda9644314992bedfeeb185104ef1.setContent(html_491509753d1644e3919750c901bc2d9f);
+        
+
+        marker_44011a6cd8224acfaf1b0be144058ac6.bindPopup(popup_47feda9644314992bedfeeb185104ef1)
+        ;
+
+        
+    
+    
+            marker_44011a6cd8224acfaf1b0be144058ac6.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b1e254d347554816ab9736471a0a38b0 = L.polyline(
+                [[39.0188359046, -119.178545803], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_2fc8e5d2c06a406b965bde2007e40d56 = L.marker(
+                [39.4494567169, -119.513801182],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_0a2d7b015932496b839a3a65374d8b17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2fc8e5d2c06a406b965bde2007e40d56.setIcon(icon_0a2d7b015932496b839a3a65374d8b17);
+        
+    
+        var popup_018b384846b14373bf59532dc79764ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1486328302fd495bba4a4ef2406ec73c = $(`<div id="html_1486328302fd495bba4a4ef2406ec73c" style="width: 100.0%; height: 100.0%;"><strong>Storey County</strong></div>`)[0];
+            popup_018b384846b14373bf59532dc79764ae.setContent(html_1486328302fd495bba4a4ef2406ec73c);
+        
+
+        marker_2fc8e5d2c06a406b965bde2007e40d56.bindPopup(popup_018b384846b14373bf59532dc79764ae)
+        ;
+
+        
+    
+    
+            marker_2fc8e5d2c06a406b965bde2007e40d56.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5da5a2c4c57a41aba7ee36b3b5964749 = L.polyline(
+                [[39.4494567169, -119.513801182], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_2dfae53e747648a6b4d340fefa549f66 = L.marker(
+                [40.6586396468, -119.656533307],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_e8fbbdd5e8294a13b7f7e36792b4bab4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2dfae53e747648a6b4d340fefa549f66.setIcon(icon_e8fbbdd5e8294a13b7f7e36792b4bab4);
+        
+    
+        var popup_3c335d6874ca4b3e91bf1ca3ee886df0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e032f1aa6a7452a9891e805c5eaf1a4 = $(`<div id="html_8e032f1aa6a7452a9891e805c5eaf1a4" style="width: 100.0%; height: 100.0%;"><strong>Washoe County</strong></div>`)[0];
+            popup_3c335d6874ca4b3e91bf1ca3ee886df0.setContent(html_8e032f1aa6a7452a9891e805c5eaf1a4);
+        
+
+        marker_2dfae53e747648a6b4d340fefa549f66.bindPopup(popup_3c335d6874ca4b3e91bf1ca3ee886df0)
+        ;
+
+        
+    
+    
+            marker_2dfae53e747648a6b4d340fefa549f66.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_61eb15f8289447adb695996c0b15a895 = L.polyline(
+                [[40.6586396468, -119.656533307], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_1e25fcb8b4d94cbeadaf00ac1aa4b599 = L.marker(
+                [39.1486497438, -119.740333372],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_0a612b375d3949dd8328310ee0387a0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e25fcb8b4d94cbeadaf00ac1aa4b599.setIcon(icon_0a612b375d3949dd8328310ee0387a0d);
+        
+    
+        var popup_018c39df8ec9485980bbbc4a9a4b228f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b72f071837e4ea4b9b759d0f3f36e40 = $(`<div id="html_0b72f071837e4ea4b9b759d0f3f36e40" style="width: 100.0%; height: 100.0%;"><strong>Carson City</strong></div>`)[0];
+            popup_018c39df8ec9485980bbbc4a9a4b228f.setContent(html_0b72f071837e4ea4b9b759d0f3f36e40);
+        
+
+        marker_1e25fcb8b4d94cbeadaf00ac1aa4b599.bindPopup(popup_018c39df8ec9485980bbbc4a9a4b228f)
+        ;
+
+        
+    
+    
+            marker_1e25fcb8b4d94cbeadaf00ac1aa4b599.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c3216a208454496b933831157dc0185a = L.polyline(
+                [[39.1486497438, -119.740333372], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_fb63ec214684416196c906ae94a159ed = L.marker(
+                [35.0569453444, -106.657892049],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_b86550918d5a49d08f6a8d0a64cfd2e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fb63ec214684416196c906ae94a159ed.setIcon(icon_b86550918d5a49d08f6a8d0a64cfd2e4);
+        
+    
+        var popup_fcd2efc6d4844514b7de412b6c0c1c5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dbd630fc0024fb5b1518cb7f90edbbd = $(`<div id="html_0dbd630fc0024fb5b1518cb7f90edbbd" style="width: 100.0%; height: 100.0%;"><strong>Bernalillo County</strong></div>`)[0];
+            popup_fcd2efc6d4844514b7de412b6c0c1c5a.setContent(html_0dbd630fc0024fb5b1518cb7f90edbbd);
+        
+
+        marker_fb63ec214684416196c906ae94a159ed.bindPopup(popup_fcd2efc6d4844514b7de412b6c0c1c5a)
+        ;
+
+        
+    
+    
+            marker_fb63ec214684416196c906ae94a159ed.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f94f8a5597df4a35a6348d06664b91aa = L.polyline(
+                [[35.0569453444, -106.657892049], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_3ecf94c5d5e3494fbd39ef3690507a3e = L.marker(
+                [32.3597653636, -106.824007632],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_c6545b0ea041491bbef7ce0a294d0f39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ecf94c5d5e3494fbd39ef3690507a3e.setIcon(icon_c6545b0ea041491bbef7ce0a294d0f39);
+        
+    
+        var popup_8a526dbb6eec4a7d87f4ea23f55dcc5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ac5736c40c04b169c31162cb74f4561 = $(`<div id="html_7ac5736c40c04b169c31162cb74f4561" style="width: 100.0%; height: 100.0%;"><strong>Doña Ana County</strong></div>`)[0];
+            popup_8a526dbb6eec4a7d87f4ea23f55dcc5e.setContent(html_7ac5736c40c04b169c31162cb74f4561);
+        
+
+        marker_3ecf94c5d5e3494fbd39ef3690507a3e.bindPopup(popup_8a526dbb6eec4a7d87f4ea23f55dcc5e)
+        ;
+
+        
+    
+    
+            marker_3ecf94c5d5e3494fbd39ef3690507a3e.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b3decc48ba5241f1a43b4306b2bdd03e = L.polyline(
+                [[32.3597653636, -106.824007632], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_90c7817196a84cee82ab7b481c475f44 = L.marker(
+                [32.1831729923, -107.737892832],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_e4e9f85feefd45ca9ab1eb1ef8ed3ba3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90c7817196a84cee82ab7b481c475f44.setIcon(icon_e4e9f85feefd45ca9ab1eb1ef8ed3ba3);
+        
+    
+        var popup_d18a137668fc4cd683f5071d4cd9e585 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3298695fa0140d8b76c024e6a170ec6 = $(`<div id="html_e3298695fa0140d8b76c024e6a170ec6" style="width: 100.0%; height: 100.0%;"><strong>Luna County</strong></div>`)[0];
+            popup_d18a137668fc4cd683f5071d4cd9e585.setContent(html_e3298695fa0140d8b76c024e6a170ec6);
+        
+
+        marker_90c7817196a84cee82ab7b481c475f44.bindPopup(popup_d18a137668fc4cd683f5071d4cd9e585)
+        ;
+
+        
+    
+    
+            marker_90c7817196a84cee82ab7b481c475f44.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ec9d5697814b43dda4624df67d6c872a = L.polyline(
+                [[32.1831729923, -107.737892832], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_c78b279269af495eb8c9c78f0ba7278d = L.marker(
+                [35.5797879366, -108.260292162],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_cd9d62950d1a4ec9ab7c756f907d6bb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c78b279269af495eb8c9c78f0ba7278d.setIcon(icon_cd9d62950d1a4ec9ab7c756f907d6bb1);
+        
+    
+        var popup_eb57edacfb004ff292f1228c10a0de21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88f69808820f434bb25be9c3461ba389 = $(`<div id="html_88f69808820f434bb25be9c3461ba389" style="width: 100.0%; height: 100.0%;"><strong>McKinley County</strong></div>`)[0];
+            popup_eb57edacfb004ff292f1228c10a0de21.setContent(html_88f69808820f434bb25be9c3461ba389);
+        
+
+        marker_c78b279269af495eb8c9c78f0ba7278d.bindPopup(popup_eb57edacfb004ff292f1228c10a0de21)
+        ;
+
+        
+    
+    
+            marker_c78b279269af495eb8c9c78f0ba7278d.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_48f13a32bf024062883715258035f9ae = L.polyline(
+                [[35.5797879366, -108.260292162], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_83e1a7bbfeb7407181a0f4f1ef6ee33e = L.marker(
+                [36.5065296984, -108.323383516],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_a20849ba23b7461fa087507515205581 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83e1a7bbfeb7407181a0f4f1ef6ee33e.setIcon(icon_a20849ba23b7461fa087507515205581);
+        
+    
+        var popup_a026737c3a304751a5e35fd29f6b7c8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_352da121381b4d39b10a5026d7c0ccfc = $(`<div id="html_352da121381b4d39b10a5026d7c0ccfc" style="width: 100.0%; height: 100.0%;"><strong>San Juan County</strong></div>`)[0];
+            popup_a026737c3a304751a5e35fd29f6b7c8a.setContent(html_352da121381b4d39b10a5026d7c0ccfc);
+        
+
+        marker_83e1a7bbfeb7407181a0f4f1ef6ee33e.bindPopup(popup_a026737c3a304751a5e35fd29f6b7c8a)
+        ;
+
+        
+    
+    
+            marker_83e1a7bbfeb7407181a0f4f1ef6ee33e.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2b6a293536b94ad0bc380aae9a9ea31c = L.polyline(
+                [[36.5065296984, -108.323383516], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_eba40c0efcba4ceca7dc7eea4993fa05 = L.marker(
+                [34.7229244269, -106.808016455],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_b3ce2ff82e984517a30747c8d6a47a3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eba40c0efcba4ceca7dc7eea4993fa05.setIcon(icon_b3ce2ff82e984517a30747c8d6a47a3d);
+        
+    
+        var popup_b56402a026ee4d25bd011305854a6630 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_449d84cc90994cfa86b44cf6ef3a7c1a = $(`<div id="html_449d84cc90994cfa86b44cf6ef3a7c1a" style="width: 100.0%; height: 100.0%;"><strong>Valencia County</strong></div>`)[0];
+            popup_b56402a026ee4d25bd011305854a6630.setContent(html_449d84cc90994cfa86b44cf6ef3a7c1a);
+        
+
+        marker_eba40c0efcba4ceca7dc7eea4993fa05.bindPopup(popup_b56402a026ee4d25bd011305854a6630)
+        ;
+
+        
+    
+    
+            marker_eba40c0efcba4ceca7dc7eea4993fa05.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4b8397811f434a80af987e2d6cb35954 = L.polyline(
+                [[34.7229244269, -106.808016455], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_0f42eac1746041e6812bf1ca7d711db0 = L.marker(
+                [43.1466850647, -77.6923562627],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_bf2241cf08fe43e9a5845734fa863340 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f42eac1746041e6812bf1ca7d711db0.setIcon(icon_bf2241cf08fe43e9a5845734fa863340);
+        
+    
+        var popup_9740d847be3547cd8029caef79d11e33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ace4b7a65234e0dbaf8ea01a5923409 = $(`<div id="html_7ace4b7a65234e0dbaf8ea01a5923409" style="width: 100.0%; height: 100.0%;"><strong>Monroe County</strong></div>`)[0];
+            popup_9740d847be3547cd8029caef79d11e33.setContent(html_7ace4b7a65234e0dbaf8ea01a5923409);
+        
+
+        marker_0f42eac1746041e6812bf1ca7d711db0.bindPopup(popup_9740d847be3547cd8029caef79d11e33)
+        ;
+
+        
+    
+    
+            marker_0f42eac1746041e6812bf1ca7d711db0.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_76ada73bf02141868e71732d303645ae = L.polyline(
+                [[43.1466850647, -77.6923562627], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_e4b4ec0cdfc3448ea26e0649d8ec8623 = L.marker(
+                [42.8561247049, -77.2983090629],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_3256bc4de0854683a2b886c99679fbc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e4b4ec0cdfc3448ea26e0649d8ec8623.setIcon(icon_3256bc4de0854683a2b886c99679fbc3);
+        
+    
+        var popup_edd045393f374cf29ae3f786351c6bd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0226574acf1348d9ac63656fa9b96413 = $(`<div id="html_0226574acf1348d9ac63656fa9b96413" style="width: 100.0%; height: 100.0%;"><strong>Ontario County</strong></div>`)[0];
+            popup_edd045393f374cf29ae3f786351c6bd8.setContent(html_0226574acf1348d9ac63656fa9b96413);
+        
+
+        marker_e4b4ec0cdfc3448ea26e0649d8ec8623.bindPopup(popup_edd045393f374cf29ae3f786351c6bd8)
+        ;
+
+        
+    
+    
+            marker_e4b4ec0cdfc3448ea26e0649d8ec8623.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_312501fed0d3437f885a4ad2143972d6 = L.polyline(
+                [[42.8561247049, -77.2983090629], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_791b7255d36c43eea70ad060543b035e = L.marker(
+                [35.1945955322, -89.8992435564],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_25c0a556800748c8ae4baa525cffdff1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_791b7255d36c43eea70ad060543b035e.setIcon(icon_25c0a556800748c8ae4baa525cffdff1);
+        
+    
+        var popup_bad2a25da8c64884b7db79a0dfa50e6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_277a33b8b3ab4e84ba41840aca9532e4 = $(`<div id="html_277a33b8b3ab4e84ba41840aca9532e4" style="width: 100.0%; height: 100.0%;"><strong>Shelby County</strong></div>`)[0];
+            popup_bad2a25da8c64884b7db79a0dfa50e6d.setContent(html_277a33b8b3ab4e84ba41840aca9532e4);
+        
+
+        marker_791b7255d36c43eea70ad060543b035e.bindPopup(popup_bad2a25da8c64884b7db79a0dfa50e6d)
+        ;
+
+        
+    
+    
+            marker_791b7255d36c43eea70ad060543b035e.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bf3ce211d5534f279d2da6cc71f12aec = L.polyline(
+                [[35.1945955322, -89.8992435564], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_96560b9314334900a5b7398e482c4c09 = L.marker(
+                [35.5022480997, -89.736605809],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_fb17d4e8d11e4c1fa6404cf60f973c89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96560b9314334900a5b7398e482c4c09.setIcon(icon_fb17d4e8d11e4c1fa6404cf60f973c89);
+        
+    
+        var popup_f12b044353064f24baada3a3ab88f392 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e7b0fc5e2b241afb07f2e6608a4355a = $(`<div id="html_4e7b0fc5e2b241afb07f2e6608a4355a" style="width: 100.0%; height: 100.0%;"><strong>Tipton County</strong></div>`)[0];
+            popup_f12b044353064f24baada3a3ab88f392.setContent(html_4e7b0fc5e2b241afb07f2e6608a4355a);
+        
+
+        marker_96560b9314334900a5b7398e482c4c09.bindPopup(popup_f12b044353064f24baada3a3ab88f392)
+        ;
+
+        
+    
+    
+            marker_96560b9314334900a5b7398e482c4c09.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3b521028a2fd4892b1a72bacf082e6be = L.polyline(
+                [[35.5022480997, -89.736605809], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_cf40b7aa1a2644d3a3a40c7088b2f42f = L.marker(
+                [31.7748629498, -106.243498597],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_7e697062fe8b4c498057d644d5ed4a0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf40b7aa1a2644d3a3a40c7088b2f42f.setIcon(icon_7e697062fe8b4c498057d644d5ed4a0d);
+        
+    
+        var popup_4ad38b5a8dd14d19afd2119995a03b87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b032b4bbdea247ebae9a653f9871b5cc = $(`<div id="html_b032b4bbdea247ebae9a653f9871b5cc" style="width: 100.0%; height: 100.0%;"><strong>El Paso County</strong></div>`)[0];
+            popup_4ad38b5a8dd14d19afd2119995a03b87.setContent(html_b032b4bbdea247ebae9a653f9871b5cc);
+        
+
+        marker_cf40b7aa1a2644d3a3a40c7088b2f42f.bindPopup(popup_4ad38b5a8dd14d19afd2119995a03b87)
+        ;
+
+        
+    
+    
+            marker_cf40b7aa1a2644d3a3a40c7088b2f42f.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ddb77933b3474fae94b2f87c3acd08fe = L.polyline(
+                [[31.7748629498, -106.243498597], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_80f82bdfb571456e9f2999e95bd37750 = L.marker(
+                [29.4525638873, -98.5253049547],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_527feb9f93874d92b9132b5ff87bdd95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80f82bdfb571456e9f2999e95bd37750.setIcon(icon_527feb9f93874d92b9132b5ff87bdd95);
+        
+    
+        var popup_450632758db94a0db3d0e4d6a46040af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d5725065d94c949eef254b9a3918fb = $(`<div id="html_a7d5725065d94c949eef254b9a3918fb" style="width: 100.0%; height: 100.0%;"><strong>Bexar County</strong></div>`)[0];
+            popup_450632758db94a0db3d0e4d6a46040af.setContent(html_a7d5725065d94c949eef254b9a3918fb);
+        
+
+        marker_80f82bdfb571456e9f2999e95bd37750.bindPopup(popup_450632758db94a0db3d0e4d6a46040af)
+        ;
+
+        
+    
+    
+            marker_80f82bdfb571456e9f2999e95bd37750.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7cd02c769a7d480f93a0af9f6c8a7c89 = L.polyline(
+                [[29.4525638873, -98.5253049547], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_f665f9d9096b4921a0073ded6dd38cc9 = L.marker(
+                [29.8116977309, -98.2880216928],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_5180b9f2747142748de26b62b3f90671 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f665f9d9096b4921a0073ded6dd38cc9.setIcon(icon_5180b9f2747142748de26b62b3f90671);
+        
+    
+        var popup_b570c08747774a3e9c1868df81236219 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76fc3bb00827421cac65d3e4f3d370f3 = $(`<div id="html_76fc3bb00827421cac65d3e4f3d370f3" style="width: 100.0%; height: 100.0%;"><strong>Comal County</strong></div>`)[0];
+            popup_b570c08747774a3e9c1868df81236219.setContent(html_76fc3bb00827421cac65d3e4f3d370f3);
+        
+
+        marker_f665f9d9096b4921a0073ded6dd38cc9.bindPopup(popup_b570c08747774a3e9c1868df81236219)
+        ;
+
+        
+    
+    
+            marker_f665f9d9096b4921a0073ded6dd38cc9.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2b5bfa54bf894e678b59791e8d6dcc47 = L.polyline(
+                [[29.8116977309, -98.2880216928], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_1959439b02cf494fb5183bb9987c7512 = L.marker(
+                [29.5887939156, -97.9540521204],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_488110e343d6472496e048914f0173ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1959439b02cf494fb5183bb9987c7512.setIcon(icon_488110e343d6472496e048914f0173ca);
+        
+    
+        var popup_8803e2334d49471394769518207ac998 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_417465f959094a10baee6105dd8a3817 = $(`<div id="html_417465f959094a10baee6105dd8a3817" style="width: 100.0%; height: 100.0%;"><strong>Guadalupe County</strong></div>`)[0];
+            popup_8803e2334d49471394769518207ac998.setContent(html_417465f959094a10baee6105dd8a3817);
+        
+
+        marker_1959439b02cf494fb5183bb9987c7512.bindPopup(popup_8803e2334d49471394769518207ac998)
+        ;
+
+        
+    
+    
+            marker_1959439b02cf494fb5183bb9987c7512.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_624c50a3244243bba96db4b1a44f5112 = L.polyline(
+                [[29.5887939156, -97.9540521204], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_ecb87ecbe1b946b888d73cde484852e4 = L.marker(
+                [29.9470133176, -98.7183498952],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_b821dd1512e3452f8c02e1cd8edca445 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ecb87ecbe1b946b888d73cde484852e4.setIcon(icon_b821dd1512e3452f8c02e1cd8edca445);
+        
+    
+        var popup_b8c90d2e35ee467aab5f1a2656e03e5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa9fc7d9ad7644d1a0d427d3d0e281af = $(`<div id="html_aa9fc7d9ad7644d1a0d427d3d0e281af" style="width: 100.0%; height: 100.0%;"><strong>Kendall County</strong></div>`)[0];
+            popup_b8c90d2e35ee467aab5f1a2656e03e5a.setContent(html_aa9fc7d9ad7644d1a0d427d3d0e281af);
+        
+
+        marker_ecb87ecbe1b946b888d73cde484852e4.bindPopup(popup_b8c90d2e35ee467aab5f1a2656e03e5a)
+        ;
+
+        
+    
+    
+            marker_ecb87ecbe1b946b888d73cde484852e4.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ad1054a4c7d046b181040076e6d84f6c = L.polyline(
+                [[29.9470133176, -98.7183498952], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_d084be2c86e34e6d886d9650d12a44c6 = L.marker(
+                [29.357567807, -99.1126393137],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_e92c222338eb432a9fb54ca4d39563ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d084be2c86e34e6d886d9650d12a44c6.setIcon(icon_e92c222338eb432a9fb54ca4d39563ad);
+        
+    
+        var popup_9416de0d31aa4c368c7feb5fe2805af3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ad7f2ee2b4f4d9eb7b92fd05181d036 = $(`<div id="html_7ad7f2ee2b4f4d9eb7b92fd05181d036" style="width: 100.0%; height: 100.0%;"><strong>Medina County</strong></div>`)[0];
+            popup_9416de0d31aa4c368c7feb5fe2805af3.setContent(html_7ad7f2ee2b4f4d9eb7b92fd05181d036);
+        
+
+        marker_d084be2c86e34e6d886d9650d12a44c6.bindPopup(popup_9416de0d31aa4c368c7feb5fe2805af3)
+        ;
+
+        
+    
+    
+            marker_d084be2c86e34e6d886d9650d12a44c6.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_09d28d485fe74415943d38d7c9721f96 = L.polyline(
+                [[29.357567807, -99.1126393137], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_4f7fb8ac8c374c88ae5b3857530c6cd1 = L.marker(
+                [29.1787511689, -98.0917855138],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_058e68b7894d44509b580df9532c9f48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f7fb8ac8c374c88ae5b3857530c6cd1.setIcon(icon_058e68b7894d44509b580df9532c9f48);
+        
+    
+        var popup_4b879d10f88e42d68700c755164c7be6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8794d28880f49eba7a4b03a5567fc3b = $(`<div id="html_d8794d28880f49eba7a4b03a5567fc3b" style="width: 100.0%; height: 100.0%;"><strong>Wilson County</strong></div>`)[0];
+            popup_4b879d10f88e42d68700c755164c7be6.setContent(html_d8794d28880f49eba7a4b03a5567fc3b);
+        
+
+        marker_4f7fb8ac8c374c88ae5b3857530c6cd1.bindPopup(popup_4b879d10f88e42d68700c755164c7be6)
+        ;
+
+        
+    
+    
+            marker_4f7fb8ac8c374c88ae5b3857530c6cd1.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7db5387fbc6347639fbdb8d60b8045e8 = L.polyline(
+                [[29.1787511689, -98.0917855138], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_cd692522cba848a891d44601a76ed2a4 = L.marker(
+                [32.4816153286, -94.8185412001],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_5f5554368130477eba4dc301f20255bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd692522cba848a891d44601a76ed2a4.setIcon(icon_5f5554368130477eba4dc301f20255bb);
+        
+    
+        var popup_9a01220ea21f4c5f8482c0333b9a2bd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1514ae5ae35044b386b3a9325cb27fb0 = $(`<div id="html_1514ae5ae35044b386b3a9325cb27fb0" style="width: 100.0%; height: 100.0%;"><strong>Gregg County</strong></div>`)[0];
+            popup_9a01220ea21f4c5f8482c0333b9a2bd9.setContent(html_1514ae5ae35044b386b3a9325cb27fb0);
+        
+
+        marker_cd692522cba848a891d44601a76ed2a4.bindPopup(popup_9a01220ea21f4c5f8482c0333b9a2bd9)
+        ;
+
+        
+    
+    
+            marker_cd692522cba848a891d44601a76ed2a4.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eea1557cdda5470995fae22721f7a06f = L.polyline(
+                [[32.4816153286, -94.8185412001], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_6d9c29fe710e4c21bbe8d5f7a260d446 = L.marker(
+                [26.4018030919, -98.1909562806],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_b72f112747b14aa6aa79a26fe661da94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d9c29fe710e4c21bbe8d5f7a260d446.setIcon(icon_b72f112747b14aa6aa79a26fe661da94);
+        
+    
+        var popup_e98470521c6640dc868c763f5b58f746 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8285071996de4467bcc0d1d14c8531fe = $(`<div id="html_8285071996de4467bcc0d1d14c8531fe" style="width: 100.0%; height: 100.0%;"><strong>Hidalgo County</strong></div>`)[0];
+            popup_e98470521c6640dc868c763f5b58f746.setContent(html_8285071996de4467bcc0d1d14c8531fe);
+        
+
+        marker_6d9c29fe710e4c21bbe8d5f7a260d446.bindPopup(popup_e98470521c6640dc868c763f5b58f746)
+        ;
+
+        
+    
+    
+            marker_6d9c29fe710e4c21bbe8d5f7a260d446.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e84186e34be24718bae3a754995deb33 = L.polyline(
+                [[26.4018030919, -98.1909562806], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var marker_9aaffe82e06044c18d7c2b184c8f516c = L.marker(
+                [31.9992097251, -97.1329399524],
+                {}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+    
+            var icon_55eb0aca6b0a4618b1dcb4052d04e6c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9aaffe82e06044c18d7c2b184c8f516c.setIcon(icon_55eb0aca6b0a4618b1dcb4052d04e6c0);
+        
+    
+        var popup_8db19c9c40274e4292701b2db4f0984d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eebff212d7784ceab1a30ade36b12880 = $(`<div id="html_eebff212d7784ceab1a30ade36b12880" style="width: 100.0%; height: 100.0%;"><strong>Hill County</strong></div>`)[0];
+            popup_8db19c9c40274e4292701b2db4f0984d.setContent(html_eebff212d7784ceab1a30ade36b12880);
+        
+
+        marker_9aaffe82e06044c18d7c2b184c8f516c.bindPopup(popup_8db19c9c40274e4292701b2db4f0984d)
+        ;
+
+        
+    
+    
+            marker_9aaffe82e06044c18d7c2b184c8f516c.bindTooltip(
+                `<div>
+                     Click for More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_389cbb0c62c746ec9990aca29097203a = L.polyline(
+                [[31.9992097251, -97.1329399524], [33.3596368342, -112.488493643]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.0}
+            ).addTo(map_9e33671d84ee43deacbc97ed2e851265);
+        
+</script>
